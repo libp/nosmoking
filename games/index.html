@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吸烟危害健康意识网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .calculator {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        input {
+            margin: 5px 0;
+            padding: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            margin: 5px 0;
+        }
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            margin: 20px auto;
+        }
+        .heart:before,
+        .heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #00ff00;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+            transition: background 0.3s ease;
+        }
+        .heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <h1>吸烟危害健康意识网页</h1>
+
+    <div id="healthCalculator" class="calculator">
+        <h2>烟民健康指数计算器</h2>
+        <input type="number" id="smokingYears" placeholder="吸烟年数">
+        <div id="heartContainer" style="width: 300px; height: 300px;"></div>
+        <p>肺部颜色指数: <span id="lungColorIndex">0</span></p>
+        <p>每年因香烟死亡人数: <span id="deathsPerYear">800000</span></p>
+    </div>
+
+    <div id="economicImpact" class="calculator">
+        <h2>吸烟经济影响计算器</h2>
+        <input type="number" id="economicSmokingYears" placeholder="吸烟年数">
+        <input type="number" id="monthlyExpense" placeholder="每月烟草支出">
+        <p>税收贡献: <span id="taxContribution">0</span> 元</p>
+        <p>减少寿命: <span id="reducedLifespan">0</span> 天</p>
+        <p>节省养老金: <span id="savedPension">0</span> 元</p>
+    </div>
+
+    <div id="smokingSimulator" class="calculator">
+        <h2>电子烟模拟器</h2>
+        <button onclick="smoke()">吸一口</button>
+        <p>已吸烟次数: <span id="puffs">0</span></p>
+        <p>节省费用: <span id="savedMoney">0</span> 元</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
