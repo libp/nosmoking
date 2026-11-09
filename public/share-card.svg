@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="78%" cy="20%" r="80%"><stop stop-color="#75300f"/><stop offset=".5" stop-color="#210b08"/><stop offset="1" stop-color="#080605"/></radialGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#9b5e1a"/><stop offset=".48" stop-color="#ffe49d"/><stop offset="1" stop-color="#a5681e"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="35" y="35" width="1130" height="560" fill="none" stroke="#c9933c" stroke-width="2"/>
+  <circle cx="980" cy="120" r="260" fill="none" stroke="#c9933c" opacity=".14"/><circle cx="980" cy="120" r="190" fill="none" stroke="#c9933c" opacity=".14"/>
+  <text x="80" y="105" fill="#caa254" font-family="Arial,sans-serif" font-size="22" letter-spacing="5">AFTERGLOW ANNUAL HONORS</text>
+  <text x="78" y="225" fill="#f8e9c5" font-family="Microsoft YaHei,sans-serif" font-size="76" font-weight="700">年度烟草贡献者</text>
+  <text x="78" y="325" fill="url(#gold)" font-family="Microsoft YaHei,sans-serif" font-size="90" font-weight="700">表彰大会</text>
+  <text x="82" y="405" fill="#aa946f" font-family="Microsoft YaHei,sans-serif" font-size="28">你已入围最后一项大奖。领，还是不领？</text>
+  <g transform="translate(850 390) rotate(-7)"><rect width="250" height="130" fill="#8f171422" stroke="#bd2b25" stroke-width="8"/><text x="125" y="58" text-anchor="middle" fill="#d94a40" font-family="Microsoft YaHei,sans-serif" font-size="36" font-weight="700">拒绝领奖</text><text x="125" y="100" text-anchor="middle" fill="#a8342c" font-family="Microsoft YaHei,sans-serif" font-size="18">有些增长，到我这里为止</text></g>
+  <text x="82" y="555" fill="#d5b46f" font-family="Microsoft YaHei,sans-serif" font-size="25" font-weight="700">余生 · AFTERGLOW</text>
+</svg>

@@ -1,7 +1,8 @@
 async (page) => {
  await page.goto('http://127.0.0.1:5173/');
  await page.setViewportSize({width:1440,height:960});
- await page.getByRole('button',{name:'心脏实验室',exact:true}).click();
+ await page.evaluate(()=>window.__product.showAct('interruption'));
+ await page.getByRole('button',{name:'查看未列入报表的部分',exact:false}).click();
  await page.getByRole('tab',{name:'鲜活之心'}).click();
  await page.waitForFunction(()=>window.__heartLab?.state.exposure<.005);
  const results=[];
